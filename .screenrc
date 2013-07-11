@@ -1,0 +1,22 @@
+screen -t bash0
+
+# clear screen on full-screen app close
+altscreen on
+
+#solution, have screen-256 on, have backset to light, 
+term screen-256color
+#having just xterm doesn't work
+#term xterm-256color
+bind ',' prev
+bind '.' next
+
+startup_message off # turn off startup splash screen
+
+# displays line at bottom, not entirely sure what everything means
+#hardstatus alwayslastline "%{rw}%H%{wk}|%{wr}%c%{wk}|%d%M|%?%=Lw%?%{wb}%n*%f%t%?(u)%?%{wk}%?%+Lw%?"
+
+#hardstatus alwayslastline "%{.bW}%-w%{.rW}%f%n %t%{-}+w %=%{..G}[%H %l} %{..Y} %m/%d %c"
+
+
+
+
