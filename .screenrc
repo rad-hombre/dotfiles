@@ -17,6 +17,8 @@ startup_message off # turn off startup splash screen
 
 #hardstatus alwayslastline "%{.bW}%-w%{.rW}%f%n %t%{-}+w %=%{..G}[%H %l} %{..Y} %m/%d %c"
 
+# another hardstatus line
+hardstatus alwayslastline "%{rw}%H%{wk} | %?%-Lw%?%{wb}%n*f %t%?(%u)%?%{wk}%?%+Lw%?"
 
 
 
