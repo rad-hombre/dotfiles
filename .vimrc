@@ -21,11 +21,30 @@ set t_Co=256
 " enabling places a cursorline that follows you around
 " set cursorline
 
-call pathogen#infect()
 
-filetype plugin on
+" for Vundle
+set nocompatible " be iMproved
+filetype off 
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+"
+"
+"
+Bundle 'scrooloose/nerdtree' 
+"Improved syntax checking for multiple languages
+Bundle 'scrooloose/syntastic' 
+"Improves vim's JS indendation
+Bundle 'pangloss/vim-javascript' 
+"Like zen-coding or emmet for vim
+Bundle 'mattn/zencoding-vim' 
+Bundle 'vim-scripts/c.vim'
 filetype plugin indent on
-filetype indent on
 
 set ignorecase
 set hlsearch
