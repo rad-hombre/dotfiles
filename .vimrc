@@ -1,42 +1,56 @@
-set number
+set nocompatible	"Use Vim settings, rather than vi settings (much better shit!) 
+
+set number 			"show numbers lines
 syntax on
-set incsearch
+set incsearch 		"find the next match as we type the search
 set showmatch
-set noswapfile
-set tabstop=4 " set tabs to 4 spaces
-set shiftwidth=4 " sets visual mode > and < indenting to 4 spaces
-set ai " sets autoindent on
-        
+set noswapfile		"disables creation of annoying swap files
+set tabstop=4 		"set tabs to 4 spaces
+set shiftwidth=4 	"sets visual mode > and < indenting to 4 spaces
+set ai 				"sets autoindent on
+let mapleader = ","
 
-" Set monokai background match original
-colo molokai
-let g:molokai_original=1
+
+set ignorecase		"ignore case when searching
+set hlsearch		"highlight search results
+set autoindent		
+set fileencoding=utf-8
+
+" set cursorline 	"create cursorline that follows you around
+
+
+"*=====================================
+"*			Theme Settings	
+"*=====================================
+
+colo molokai 		"set molokai background
+let g:molokai_original=1 
 set background=light
-"set background=dark
-
-" Forces vim to use 256 colors, essential for molokai background
-set t_Co=256
+set t_Co=256 		"force vim to use 256 colors, essential for molokai background
 
 
-" enabling places a cursorline that follows you around
-" set cursorline
+"*=====================================
+"*			NERDcommentor
+"*=====================================
 
+filetype plugin indent on
 
-" for Vundle
-set nocompatible " be iMproved
-filetype off 
+"*=====================================
+"*				Vundle	
+"*=====================================
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" Let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+"let Vundle manage vundle package
+Bundle 'gmarik/vundle' 
 
 " My Bundles here:
-"
-"
-"
+
 Bundle 'scrooloose/nerdtree' 
+"improved sexy commenting <leader>ci, <leader>cs, and <leader>cu are friends
+Bundle 'scrooloose/nerdcommenter'
+
 "Improved syntax checking for multiple languages
 Bundle 'scrooloose/syntastic' 
 "Improves vim's JS indendation
@@ -44,14 +58,11 @@ Bundle 'pangloss/vim-javascript'
 "Like zen-coding or emmet for vim
 Bundle 'mattn/zencoding-vim' 
 Bundle 'vim-scripts/c.vim'
-filetype plugin indent on
 
-set ignorecase
-set hlsearch
-set autoindent
-set fileencoding=utf-8
 
-" My custom mappings
+"*=====================================
+"*			Custom Mappings
+"*=====================================
 :map ,php :! clear && php %<cr>
 
 :map ,ruby :! clear && ruby %<cr>
@@ -59,10 +70,12 @@ set fileencoding=utf-8
 :map ,gcc :! clear && gcc % -std=c99 -o %.out && ./%.out<cr> 
 
 :map ,js :! clear && node %<cr>
-" Configuration to customize Emmet auto-completion
 
-" let g:user_expandabbr_key = '<,-e>'
-" let g:use_zen_complete_tag = 1
+:map <F2> <esc>:NERDTreeToggle<cr> "toggles Nerdtree with <F2>
+
+"*=====================================
+"*				Emmet 	
+"*=====================================
 
 let g:user_zen_settings = {
   \  'indentation' : '  ',
@@ -77,15 +90,18 @@ let g:user_zen_settings = {
   \  }
   \}
 
-  let g:user_zen_expandabbr_key = ',e'
+let g:user_zen_expandabbr_key = ',e'
 
-    let g:use_zen_complete_tag = 1
+let g:use_zen_complete_tag = 1
 
-" Has c.vim use c99 compiler instead of standard gcc
+"make c.vim use c99 compiler instead of standard gcc
 let  g:C_CCompiler = 'c99'
 
-" only show number line for current window
+"*=====================================
+"*	Randoms (might be useful later)	
+"*=====================================
 
+" only show number line for current window
 " set number
 " au WinEnter * :setlocal number
 " au WinLeave * :setlocal nonumber
@@ -95,4 +111,3 @@ let  g:C_CCompiler = 'c99'
 " au WinEnter * :wincmd = 
 
 
-map <F2> <esc>:NERDTreeToggle<cr>
