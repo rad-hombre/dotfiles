@@ -3,22 +3,28 @@ set nocompatible	"Use Vim settings, rather than vi settings (much better shit!)
 set number 			"show numbers lines
 syntax on
 set incsearch 		"find the next match as we type the search
-set showmatch
+set showmatch		"show matching parenthesis, curly braces, etc
 set noswapfile		"disables creation of annoying swap files
+set nobackup 		"disables creation of backup files
 set tabstop=4 		"set tabs to 4 spaces
+set smarttab 		"inserts tab on linestart according to shiftwidth
 set shiftwidth=4 	"sets visual mode > and < indenting to 4 spaces
 set ai 				"sets autoindent on
 let mapleader = ","
-
 
 set ignorecase		"ignore case when searching
 set hlsearch		"highlight search results
 set autoindent		
 set fileencoding=utf-8
 
-" set cursorline 	"create cursorline that follows you around
+
+set history=1000 	"remember more commands and search history
+set undolevels=1000	"allow for undo, on undo, on undo
 
 
+"for comments
+au FileType c,cpp setlocal comments-=:// comments+=f://
+"au FileType * setlocal formatoptions-=cro
 "*=====================================
 "*			Theme Settings	
 "*=====================================
@@ -33,8 +39,9 @@ set t_Co=256 		"force vim to use 256 colors, essential for molokai background
 "*			NERDcommentor
 "*=====================================
 
-filetype plugin indent on
 
+filetype plugin on "need on for Nerdcommentor; fucks with line commenting
+filetype indent on
 "*=====================================
 "*				Vundle	
 "*=====================================
@@ -71,7 +78,8 @@ Bundle 'vim-scripts/c.vim'
 
 :map ,js :! clear && node %<cr>
 
-:map <F2> <esc>:NERDTreeToggle<cr> "toggles Nerdtree with <F2>
+"toggles Nerdtree with <F2>
+:map <F2> <esc>:NERDTreeToggle<cr> 
 
 "*=====================================
 "*				Emmet 	
@@ -110,4 +118,5 @@ let  g:C_CCompiler = 'c99'
 " au WinEnter * :set winfixheight
 " au WinEnter * :wincmd = 
 
+au FileType * setl fo-=cro "disable god-awful auto-commenting, <stays here!>
 
