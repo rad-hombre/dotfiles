@@ -102,6 +102,10 @@ let g:user_zen_expandabbr_key = ',e'
 
 let g:use_zen_complete_tag = 1
 
+"*=====================================
+"*				c.vim	
+"*=====================================
+
 "make c.vim use c99 compiler instead of standard gcc
 let  g:C_CCompiler = 'c99'
 
