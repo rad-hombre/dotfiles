@@ -11,7 +11,7 @@ The .vimrc works in conjunction with [vundle](https://github.com/gmarik/vundle),
 
 pull down vundle...
 ```
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ```
 then go into vim and run
 
