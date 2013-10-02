@@ -63,7 +63,7 @@ Bundle 'scrooloose/syntastic'
 "Improves vim's JS indendation
 Bundle 'pangloss/vim-javascript' 
 "Like zen-coding or emmet for vim
-Bundle 'mattn/zencoding-vim' 
+Bundle 'mattn/emmet-vim' 
 Bundle 'vim-scripts/c.vim'
 
 
@@ -85,7 +85,7 @@ Bundle 'vim-scripts/c.vim'
 "*				Emmet 	
 "*=====================================
 
-let g:user_zen_settings = {
+let g:user_emmet_settings = {
   \  'indentation' : '  ',
   \  'perl' : {
   \    'aliases' : {
@@ -98,9 +98,9 @@ let g:user_zen_settings = {
   \  }
   \}
 
-let g:user_zen_expandabbr_key = ',e'
+let g:user_emmet_expandabbr_key = ',e'
 
-let g:use_zen_complete_tag = 1
+let g:use_emmet_complete_tag = 1
 
 "*=====================================
 "*				c.vim	
