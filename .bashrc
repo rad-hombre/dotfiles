@@ -19,7 +19,7 @@ alias weechat='weechat-curses'
 alias pianobar='aoss pianobar'
 
 #aliases for changing directories
-alias ..='cd ..'
+alias ..="cd .."
 alias ...='cd ../..'
 
 #i feel I could do more here, 

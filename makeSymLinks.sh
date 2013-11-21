@@ -25,10 +25,7 @@ dir=~/dotfiles
 olddir=~/dotfiles_old
 
 # list of files we're dealing with 
-files="bashrc vimrc vim zshrc oh-my-zsh screenrc tmux.conf Xresources"
-
-
-
+files="bashrc vimrc vim zshrc oh-my-zsh screenrc tmux.conf Xresources inputrc bash_login"
 
 
 
@@ -55,6 +52,19 @@ for file in $files; do
 	ln -s $dir/.$file ~/.$file
 
 done 
+
+echo ""
+echo ""
+echo "---------------------------"
+echo "Cloning Vundle, hold on playa....."
+echo "---------------------------"
+git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+
+
+
+
+# pull down 
+
 
 
 echo ""

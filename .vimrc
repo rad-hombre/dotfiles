@@ -64,17 +64,17 @@ Bundle 'scrooloose/syntastic'
 Bundle 'pangloss/vim-javascript' 
 "Like zen-coding or emmet for vim
 Bundle 'mattn/emmet-vim' 
-Bundle 'vim-scripts/c.vim'
+"Bundle 'vim-scripts/c.vim'
 
 
 "*=====================================
 "*			Custom Mappings
 "*=====================================
 :map ,php :! clear && php %<cr>
-
+:map ,python :! clear && python %<cr>
 :map ,ruby :! clear && ruby %<cr>
 
-:map ,gcc :! clear && gcc % -std=c99 -o %.out && ./%.out<cr> 
+":map ,gcc :! clear && gcc % -std=c99 -o %.out && ./%.out<cr> 
 
 :map ,js :! clear && node %<cr>
 
@@ -108,7 +108,7 @@ let g:use_emmet_complete_tag = 1
 
 
 "make c.vim use c99 compiler instead of standard gcc
-let  g:C_CCompiler = 'c99'
+"let  g:C_CCompiler = 'c99'
 
 "*=====================================
 "*	Randoms (might be useful later)	
