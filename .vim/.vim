@@ -1,1 +1,0 @@
-/u/morndoff/dotfiles/.vim

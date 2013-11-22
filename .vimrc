@@ -71,7 +71,7 @@ Bundle 'mattn/emmet-vim'
 "*			Custom Mappings
 "*=====================================
 :map ,php :! clear && php %<cr>
-:map ,python :! clear && python %<cr>
+:map ,py :! clear && python %<cr>
 :map ,ruby :! clear && ruby %<cr>
 
 ":map ,gcc :! clear && gcc % -std=c99 -o %.out && ./%.out<cr> 

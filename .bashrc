@@ -4,6 +4,10 @@
 alias rr='xrdb ~/.Xresources'
 #alias v='vim'
 
+#set vi mode
+set -o vi
+
+
 export TERM='xterm-256color'
 
 export EDITOR='vim'
