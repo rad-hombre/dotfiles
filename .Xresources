@@ -42,71 +42,61 @@ xscreensaver.passwd.thermometer.width:       8
 !! <<  Color Settings  >>
 !! --------------------------------
 
-!#include "/home/mattattaque/.colors/nu.colors"
-!#include "/home/mattattaque/.colors/solarized-tang.colors"
-
-#include "/home/mattattaque/.colors/beastie.colors"
-!#include "/home/mattattaque/.colors/shway.colors"
-!#include "/home/mattattaque/.colors/phallus.colors"
-!#include "/home/mattattaque/.colors/genie.colors"
-
-! vim: set filetype=xdefaults :
-
-
+#include "/u/morndoff/.colors/beastie.colors"
 
 
 !! --------------------------------
 !! <<  Terminal settings  >>
 !! --------------------------------
 
-URxvt.colorMode: on
-URxvt.cursorBlink: true
-URxvt.scrollBar: false
-URxvt.termName: rxvt-256color
-URxvt.iso14755: false
-URxvt.letterSpace: 0
+xterm.colorMode: on
+xterm.cursorBlink: true
+xterm.scrollBar: false
+xterm.termName: rxvt-256color
+xterm.iso14755: false
+xterm.letterSpace: 0
 
-URxvt.geometry: 106x32
+xterm.geometry: 106x32
 
 
-URxvt*borderColor:        #151515
-URxvt*colorBD:            #ffffff
-!URxvt*cursorColor:        #ff8939
-!URxvt*cursorColor2:       #151515
+xterm*borderColor:        #151515
+xterm*colorBD:            #ffffff
+!xterm*cursorColor:        #ff8939
+!xterm*cursorColor2:       #151515
 
 
 !! --------------------------------
 !! <<  Transparency Settings  >>
 !! --------------------------------
 
-URxvt*.transparent: true
-! tips > URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
-URxvt*.shading: 22, 110 
+xterm*.transparent: true
+! tips > xterm*.shading: 0 to 99 darkens, 101 to 200 lightens
+xterm*.shading: 22, 110 
 
 !! --------------------------------
 !! <<  Font settings  >>
 !! --------------------------------
 
-URxvt.font: xft:terminus:pixelsize=12:antialias=false
-URxvt.boldFont: xft:terminus:bold:pixelsize=12:antialias=false
-!URxvt.font: -terminus12-medium-r-normal--12-120-72-72-c-60-iso8859-1
+xterm.font: xft:terminus:pixelsize=14:antialias=false
+xterm.boldFont: xft:terminus:bold:pixelsize=12:antialias=false
+!xterm.font: -terminus12-medium-r-normal--12-120-72-72-c-60-iso8859-1
 
 !! --------------------------------
-!! <<  URxvt Perl >>
+!! <<  xterm Perl >>
 !! --------------------------------
 
 ! trying to get the damn copy/paste working!
 
-URxvt.perl-lib: /usr/lib/urxvt/perl
-URxvt.perl-ext-common: default,matcher,clipboard,selection-autotransform, keyboard-select
-URxvt.keysym.C-c: perl:clipboard:copy
-URxvt.keysym.C-v: perl:clipboard:paste
+xterm.perl-lib: /usr/lib/urxvt/perl
+xterm.perl-ext-common: default,matcher,clipboard,selection-autotransform, keyboard-select
+xterm.keysym.C-c: perl:clipboard:copy
+xterm.keysym.C-v: perl:clipboard:paste
 
-URxvt.clipboard.copycmd: xsel -ib
-URxvt.clipboard.pastecmd: xsel -ob
+xterm.clipboard.copycmd: xsel -ib
+xterm.clipboard.pastecmd: xsel -ob
 
-URxvt.url-launcher: /usr/bin/firefox
-URxvt.matcher.button: 1
+xterm.url-launcher: /usr/bin/firefox
+xterm.matcher.button: 1
 
 
 

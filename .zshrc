@@ -15,35 +15,6 @@ ZSH_THEME="fuckingtheme"
 
 # there's a lot of these, go here http://goo.gl/0TDfL 
 
-#------------------------------------------------------
-#			Aliases
-#------------------------------------------------------
-
-alias x='exit'
-alias ch='chromium'
-alias ff='firefox'
-alias weechat='weechat-curses'
-
-#install alsa-oss, create/set .config/pianobar/config, set default_driver=oss
-#run aoss pianobar
-alias pianobar='aoss pianobar'
-
-#aliases for changing directories
-alias ..='cd ..'
-alias ...='cd ../..'
-
-#i feel I could do more here, 
-alias l='clear && pwd && ls -FGl'
-alias u='cd .. && l'
-
-
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
-
-alias pdx='ssh morndoff@linuxlab.cs.pdx.edu'
-
-
-
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -80,6 +51,8 @@ alias pdx='ssh morndoff@linuxlab.cs.pdx.edu'
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+# Load up aliases 
+source ~/.aliases
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...

@@ -25,7 +25,7 @@ dir=~/dotfiles
 olddir=~/dotfiles_old
 
 # list of files we're dealing with 
-files="bashrc vimrc vim zshrc oh-my-zsh screenrc tmux.conf Xresources inputrc bash_login"
+files="aliases bashrc vimrc vim zshrc oh-my-zsh screenrc tmux.conf Xresources inputrc bash_login"
 
 
 
