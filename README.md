@@ -6,27 +6,27 @@
 All my dotfiles. Boom.
 
 ##Setup
-After pulling down repository into your home directory ($HOME), run
+After pulling down repository into your home directory ($HOME), run the installation script from within
+the repo directory. 
 ```
 sh makeSymLinks.sh
 ```
-from within dotfiles directory. 
-This script automatically creates system links from the repository 
+This script automatically creates system links from the repo
 directory into $HOME, copying and preserving old dotfiles into $HOME/dotfiles_old
 
 ##Vim Setup
-My vim setup works with [vundle](https://github.com/gmarik/vundle) for plugin 
-management. 
+My vim setup works with [vundle](https://github.com/gmarik/vundle) for plugin management. 
 
 makeSymLinks.sh pulls down Vundle automatically. 
-The first time you run vim enter
+
+The first time you run vim, you can tell it to automatically start pulling down relevant packages, indicated
+in the vimrc, with the following. 
 
 ```
 :BundleInstall
 ```
 
-to tell Vundle to pull down the relevenat packages indicated 
-in the vimrc file. 
+And you're good! 
 
 
 ##Zsh
