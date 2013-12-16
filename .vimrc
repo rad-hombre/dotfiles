@@ -1,26 +1,24 @@
-set nocompatible	"Use Vim settings, rather than vi settings 
-
-set number 			"Show numbers lines
-syntax on
-set incsearch 		"Find the next match as we type the search
-set showmatch		"Show matching parenthesis, curly braces, etc
-set noswapfile		"Disables creation of annoying swap files
-set nobackup 		"Disables creation of backup files
-set tabstop=4 		"Set tabs to 4 spaces
-"set smarttab 		"Inserts tab on linestart according to shiftwidth
-set shiftwidth=4 	"Sets visual mode > and < indenting to 4 spaces
-set ai 				"Sets autoindent on
-let mapleader = ","
-set expandtab		"Use spaces, not actual tabs 
+set nocompatible    "Use Vim settings, rather than vi settings 
+set number          "Show numbers lines
+syntax on           "Enable syntax highlighting
+set incsearch       "Find the next match as we type the search
+set showmatch       "Show matching parenthesis, curly braces, etc
+set noswapfile      "Disables creation of annoying swap files
+set nobackup        "Disables creation of backup files
+set tabstop=4       "Set tabs to 4 spaces
+set shiftwidth=4    "Sets visual mode indenting to 4 spaces
+set ai              "Sets autoindent on
+let mapleader = "," 
+set expandtab       "Use spaces, not actual tabs 
 set softtabstop=4   "Backspace set to 4 spaces 
-set ignorecase		"Ignore case when searching
-set hlsearch		"highlight search results
+set ignorecase      "Ignore case when searching
+set hlsearch        "highlight search results
 set autoindent		
 set fileencoding=utf-8
 
 
-set history=1000 	"Remember more commands and search history
-set undolevels=1000	"Allow for undo, on undo, on undo
+set history=1000    "Remember more commands and search history
+set undolevels=1000 "Allow for undo, on undo, on undo
 
 
 "For comments
@@ -31,10 +29,10 @@ au FileType c,cpp setlocal comments-=:// comments+=f://
 "*          Theme Settings	
 "*=====================================
 
-colo molokai 		"Set molokai background
+colo molokai        "Set molokai background
 let g:molokai_original=1 
 set background=light
-set t_Co=256 		"Force vim to use 256 colors, essential for molokai background
+set t_Co=256        "Force vim to use 256 colors, essential for molokai background
 
 
 "*=====================================
@@ -76,6 +74,11 @@ Bundle 'mattn/emmet-vim'
 ":map ,g++ :! clear && g++ *.cpp *.o ./a.out<cr> 
 
 :map ,js :! clear && node %<cr>
+
+"Clears highlights after search with ESC or CTRL+[  
+:nnoremap <silent> <esc> :noh<cr><esc>
+
+
 
 "*=====================================
 "*          Emmet 	
