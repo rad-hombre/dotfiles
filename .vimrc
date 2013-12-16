@@ -7,10 +7,11 @@ set showmatch		"Show matching parenthesis, curly braces, etc
 set noswapfile		"Disables creation of annoying swap files
 set nobackup 		"Disables creation of backup files
 set tabstop=4 		"Set tabs to 4 spaces
-set smarttab 		"Inserts tab on linestart according to shiftwidth
+"set smarttab 		"Inserts tab on linestart according to shiftwidth
 set shiftwidth=4 	"Sets visual mode > and < indenting to 4 spaces
 set ai 				"Sets autoindent on
 let mapleader = ","
+set expandtab		"Use spaces, not actual tabs 
 
 set ignorecase		"Ignore case when searching
 set hlsearch		"highlight search results
@@ -27,7 +28,7 @@ au FileType c,cpp setlocal comments-=:// comments+=f://
 "au FileType * setlocal formatoptions-=cro
 
 "*=====================================
-"*			Theme Settings	
+"*          Theme Settings	
 "*=====================================
 
 colo molokai 		"Set molokai background
@@ -37,14 +38,13 @@ set t_Co=256 		"Force vim to use 256 colors, essential for molokai background
 
 
 "*=====================================
-"*			NERDcommentor
+"*          NERDcommentor
 "*=====================================
-
 
 filetype plugin on "Need on for Nerdcommentor; fucks with line commenting
 filetype indent on
 "*=====================================
-"*				Vundle	
+"*          Vundle	
 "*=====================================
 
 set rtp+=~/.vim/bundle/vundle/
@@ -67,7 +67,7 @@ Bundle 'mattn/emmet-vim'
 
 
 "*=====================================
-"*			Custom Mappings
+"*          Custom Mappings
 "*=====================================
 :map ,php :! clear && php %<cr>
 :map ,py :! clear && python %<cr>
@@ -78,7 +78,7 @@ Bundle 'mattn/emmet-vim'
 :map ,js :! clear && node %<cr>
 
 "*=====================================
-"*				Emmet 	
+"*          Emmet 	
 "*=====================================
 
 let g:user_emmet_settings = {
@@ -99,7 +99,7 @@ let g:user_emmet_expandabbr_key = ',e'
 let g:use_emmet_complete_tag = 1
 
 "*=====================================
-"*				c.vim	
+"*          c.vim	
 "*=====================================
 
 
@@ -107,7 +107,7 @@ let g:use_emmet_complete_tag = 1
 "Let  g:C_CCompiler = 'c99'
 
 "*=====================================
-"*	Randoms (might be useful later)	
+"*  Randoms (might be useful later)	
 "*=====================================
 
 " only show number line for current window
