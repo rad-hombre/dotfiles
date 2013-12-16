@@ -12,7 +12,7 @@ set shiftwidth=4 	"Sets visual mode > and < indenting to 4 spaces
 set ai 				"Sets autoindent on
 let mapleader = ","
 set expandtab		"Use spaces, not actual tabs 
-
+set softtabstop=4   "Backspace set to 4 spaces 
 set ignorecase		"Ignore case when searching
 set hlsearch		"highlight search results
 set autoindent		
