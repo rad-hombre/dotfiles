@@ -42,7 +42,7 @@ xscreensaver.passwd.thermometer.width:       8
 !! <<  Color Settings  >>
 !! --------------------------------
 
-#include "/u/morndoff/.colors/beastie.colors"
+#include "/u/orndoffm/dotfiles/.colors/beastie.colors"
 
 
 !! --------------------------------
@@ -56,7 +56,7 @@ xterm.termName: rxvt-256color
 xterm.iso14755: false
 xterm.letterSpace: 0
 
-xterm.geometry: 106x32
+xterm*vt100*geometry: 80*50
 
 
 xterm*borderColor:        #151515

@@ -124,3 +124,13 @@ let g:use_emmet_complete_tag = 1
 
 au FileType * setl fo-=cro "disable god-awful auto-commenting, <stays here!>
 
+"*=====================================
+"*          Gvim  
+"*=====================================
+
+"set guifont=Consolas:h11
+"set guioptions=-T                       "removes toolbar
+"set guioptions=-r                       "removes right-hand scrollbar
+"set lines=50 columns=150
+
+

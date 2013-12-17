@@ -1,6 +1,6 @@
-URxvt*background: #121212
-URxvt*foreground: #E0E0E0
-URxvt*cursorColor: #fedd26
+xterm*background: #121212
+xterm*foreground: #E0E0E0
+xterm*cursorColor: #fedd26
 
 
 !black

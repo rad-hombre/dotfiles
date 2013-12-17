@@ -1,0 +1,75 @@
+
+"================================================
+"				Key Mappings	
+"================================================
+
+"In general, goal is to make Vimperator act as much like Vimium 
+"as possible with respect to keybindings 
+
+map , <Leader>
+
+map J gT
+map K gt
+
+
+map d <C-d>
+map u <C-u>
+map H <C-o>
+map L <C-i>
+
+noremap x d
+noremap X u
+
+"Everytime I set these weird stuff happens, 
+"Either j smooth-scrolls while k does nearly nothing, 
+"Or if I disable them everything works as normal. 
+"noremap j 2j 
+"noremap k 2k
+
+set hintchars=sadfjklewcmpgh	"Don't use numbers, use letters 
+
+"Display
+set gui=tabs
+set tabnumbers
+
+set incsearch
+set hlsearch					"Highlight all search results, not just first 
+set ignorecase					"Ignore case when searching
+set smartcase
+set novisualbell				"Turn off annoying bell sound
+
+
+"credit goes to emahub@github.com for the original version of this. Big ups, dude.  
+
+
+
+"================================================
+"					Theming
+"================================================
+
+highlight Hint z-index:9999; font-size:12px; font-style: bold; color: #fff; text-shadow: 0 1px 0 #000; line-height: 20px; background-color:rgba(0,0,0,0.6); border-width:0px; border-radius: 10px;box-shadow: 0 0 2px rgba(0,0,0, 0.5); padding: 0 0; min-width: 20px; text-indent: -1px;text-align: center; display: inline-block;position:absolute; text-align: cener; vertical-align: middle; font-family: Menlo, Consolas, Monaco, monospace; text-transform: uppercase; margin-top: --7px; margin-left: -7px;
+
+
+
+highlight HintActive background:rgba(0,0,240,0.3);
+highlight HintElem background-color:rgba(240,0,0,0.1);
+
+
+" Make Firefox run faster by using JIT
+set! javascript.options.jit.chrome=true
+
+"Toggles bottom statusbar display with F8
+map <silent> <C-F8> :js toggle_bottombar()<CR>
+
+:js << EOF
+function toggle_bottombar() {
+    var bb = document.getElementById('liberator-bottombar');
+    if (!bb)
+        return;
+    bb.style.height = (bb.style.height == '') ? '0px' : '';
+    bb.style.overflow = (bb.style.height == '') ? '' : 'hidden';
+    }
+EOF
+
+
+
