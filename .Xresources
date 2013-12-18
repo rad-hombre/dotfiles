@@ -52,17 +52,22 @@ xscreensaver.passwd.thermometer.width:       8
 xterm.colorMode: on
 xterm.cursorBlink: true
 xterm.scrollBar: false
-xterm.termName: rxvt-256color
+xterm.termName: xterm-256color 
 xterm.iso14755: false
 xterm.letterSpace: 0
 
-xterm*vt100*geometry: 80*50
+xterm*VT100*geometry: 106x32 
 
+xterm*locale: true
 
 xterm*borderColor:        #151515
 xterm*colorBD:            #ffffff
 !xterm*cursorColor:        #ff8939
 !xterm*cursorColor2:       #151515
+
+
+#Let me use ALT with console applications 
+xterm*metaSendsEscape: true
 
 
 !! --------------------------------
