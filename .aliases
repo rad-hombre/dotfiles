@@ -1,5 +1,4 @@
 
-# 
 alias unix="ssh morndoff@unix.cs.pdx.edu"
 alias catunix="ssh orndoffm@unix.cs.pdx.edu"
 

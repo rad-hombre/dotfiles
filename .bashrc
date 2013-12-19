@@ -5,7 +5,7 @@ source ~/.aliases
 # Set vi mode
 set -o vi
 
-export TERM='xterm-256color'
+#export TERM='xterm-256color'
 
 export EDITOR='vim'
 export PAGER='less'

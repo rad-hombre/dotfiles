@@ -23,5 +23,5 @@
 *color7: #DDEEDD
 *color15: #6C887A
 
-!*foreground: #DDEEDD
-!*background: #1C1C1C
+*foreground: #DDEEDD
+*background: #1C1C1C
