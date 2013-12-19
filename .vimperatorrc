@@ -3,6 +3,7 @@
 "               Key Mappings	
 "================================================
 
+
 "In general, goal is to make Vimperator act as much like Vimium 
 "as possible with respect to keybindings 
 
@@ -26,26 +27,30 @@ noremap X u
 "noremap j 2j 
 "noremap k 2k
 
-set hintchars=sadfjklewcmpgh    "Don't use numbers, use letters 
+"
+
+"Don't use numbers, use letters 
+set hintchars=sadfjklewcmpgh    
 
 "Display
 set gui=tabs
 set tabnumbers
 
 set incsearch
-set hlsearch                    "Highlight all search results, not just first 
-set ignorecase                  "Ignore case when searching
+set hlsearch                    
+set ignorecase                  
 set smartcase
-set novisualbell                "Turn off annoying bell sound
+set novisualbell                
 
 
-"credit goes to emahub@github.com for the original version of this. Big ups, dude.  
 
 
 
 "================================================
 "                   Theming
 "================================================
+
+"credit goes to emahub@github.com for the original version of this. Big ups, dude.  
 
 highlight Hint z-index:9999; font-size:12px; font-style: bold; color: #fff; text-shadow: 0 1px 0 #000; line-height: 20px; background-color:rgba(0,0,0,0.6); border-width:0px; border-radius: 10px;box-shadow: 0 0 2px rgba(0,0,0, 0.5); padding: 0 0; min-width: 20px; text-indent: -1px;text-align: center; display: inline-block;position:absolute; text-align: cener; vertical-align: middle; font-family: Menlo, Consolas, Monaco, monospace; text-transform: uppercase; margin-top: --7px; margin-left: -7px;
 
@@ -56,7 +61,7 @@ highlight HintElem background-color:rgba(240,0,0,0.1);
 
 
 " Make Firefox run faster by using JIT
-set! javascript.options.jit.chrome=true
+" set! javascript.options.jit.chrome=true
 
 "Toggles bottom statusbar display with F8
 map <silent> <C-F8> :js toggle_bottombar()<CR>
@@ -70,6 +75,5 @@ function toggle_bottombar() {
     bb.style.overflow = (bb.style.height == '') ? '' : 'hidden';
     }
 EOF
-
 
 
