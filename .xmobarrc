@@ -1,7 +1,7 @@
 Config { font = "xft:Terminus-8"
 , bgColor = "black"
 , fgColor = "#444444"
-, position = Static { xpos = 0, ypos = 0, width=1920, height = 16 }  
+, position = Static { xpos = 0, ypos = 0, width = 1920, height = 16 }  
 , lowerOnStart = True
 , commands = [ Run Weather "KPDX" ["-t","<tempF>F","-L","19","-H","25","--normal","green","--high","red","--low","lightblue"] 36000
              , Run Network "wlp3s0" ["-L","0","-H","32","--normal","green","--high","red"] 10
