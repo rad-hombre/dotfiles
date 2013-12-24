@@ -1,23 +1,10 @@
 
-alias unix="ssh morndoff@unix.cs.pdx.edu"
-alias catunix="ssh orndoffm@unix.cs.pdx.edu"
-
-alias rita="ssh morndoff@rita.cat.pdx.edu"
-alias catrita="ssh orndoffm@rita.cat.pdx.edu"
-
-alias ruby="ssh morndoff@ruby.cat.pdx.edu"
-alias catruby="ssh orndoffm@ruby.cat.pdx.edu"
-
-alias stargate="ssh orndoffm@stargate.cat.pdx.edu"
-
 # temp aliases for some testing
 alias rr='xrdb ~/.Xresources'
 
-
-alias x='exit'
-alias ch='chromium'
-alias ff='firefox'
 alias weechat='weechat-curses'
+
+alias scrot="scrot '-e $f ~/Pictures/Screenshots'"
 
 
 #install alsa-oss, create/set .config/pianobar/config, set default_driver=oss

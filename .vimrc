@@ -69,7 +69,7 @@ Bundle 'mattn/emmet-vim'
 "*=====================================
 :map ,php :! clear && php %<cr>
 :map ,py :! clear && python %<cr>
-:map ,ruby :! clear && ruby %<cr>
+:map ,rb :! clear && ruby %<cr>
 
 ":map ,g++ :! clear && g++ *.cpp *.o ./a.out<cr> 
 
