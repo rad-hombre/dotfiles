@@ -5,9 +5,15 @@
 
 
 #Read X configuruation files 
-xrdb -load ~/.Xresources 
+
+[ -f ~/.xprofile ] && source ~/.xprofile
 
 # sets backgr
 eval `cat ~/.fehbg`
-ssh-agent xmonad 
+
+#Load up the colors 
+
+
+xrdb -merge ~/.Xresources
+USRRESOURCES=$HOME/.Xresources
 

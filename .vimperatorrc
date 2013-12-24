@@ -18,8 +18,12 @@ map u <C-u>
 map H <C-o>
 map L <C-i>
 
+
 noremap x d
 noremap X u
+
+unmap x
+
 
 "Everytime I set these weird stuff happens, 
 "Either j smooth-scrolls while k does nearly nothing, 

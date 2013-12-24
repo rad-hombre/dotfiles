@@ -15,6 +15,7 @@ alias pianobar='aoss pianobar'
 alias ..="cd .."
 alias ...='cd ../..'
 
+alias xscreensaver="xscreensaver && xscreensaver-command -lock"
 
 alias l='clear && pwd && ls -FGl'
 alias u='cd .. && l'
