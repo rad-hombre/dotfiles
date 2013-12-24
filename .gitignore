@@ -5,3 +5,9 @@
 .xmonad/*.errors
 .xmonad/xmonad-x86_64-linux
 .git
+
+.vim/bundle
+.ssh/id_rsa.pub
+.ssh/id_rsa
+.gitignore
+
