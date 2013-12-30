@@ -46,7 +46,8 @@ set ignorecase
 set smartcase
 set novisualbell                
 
-
+ignorekeys add www\\.reddit\\.com
+ignorekeys add mail\\.google\\.com
 
 
 
