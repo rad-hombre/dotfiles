@@ -21,8 +21,8 @@
 
 
 
-dir=~/dotfiles
-olddir=~/dotfiles_old
+dir=~/.dotfiles
+olddir=~/.dotfiles_old
 
 # list of files we're dealing with 
 files="aliases bashrc vimrc vim zshrc oh-my-zsh screenrc ssh tmux.conf Xresources inputrc bash_login vimperatorrc xmonad xmobarrc"
@@ -44,7 +44,7 @@ cd $dir
 
 for file in $files; do
 	echo "Moving current dotfiles from \$HOME to $olddir"
-	mv ~/.$file ~/dotfiles_old/
+	mv ~/.$file ~/.dotfiles_old/
 
 	echo ""
 
