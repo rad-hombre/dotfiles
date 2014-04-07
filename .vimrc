@@ -138,6 +138,16 @@ au FileType * setl fo-=cro "disable god-awful auto-commenting, <stays here!>
 "set guifont=Consolas:h11
 "set guioptions=-T                       "removes toolbar
 "set guioptions=-r                       "removes right-hand scrollbar
-"set lines=50 columns=150
+
+
+
+
+
+set lines=50 columns=150
+set textwidth=80
+set ruler 
+set colorcolumn=80
+:hi ColorColumn guibg=#2d2d2d ctermbg=246
+
 
 
