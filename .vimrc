@@ -20,7 +20,6 @@ set fileencoding=utf-8
 set history=1000    "Remember more commands and search history
 set undolevels=1000 "Allow for undo, on undo, on undo
 
-
 "For comments
 au FileType c,cpp setlocal comments-=:// comments+=f://
 "au FileType * setlocal formatoptions-=cro
@@ -146,8 +145,8 @@ au FileType * setl fo-=cro "disable god-awful auto-commenting, <stays here!>
 set lines=50 columns=150
 set textwidth=80
 set ruler 
-set colorcolumn=80
-:hi ColorColumn guibg=#2d2d2d ctermbg=246
+"set colorcolumn=80
+":hi ColorColumn guibg=#2d2d2d ctermbg=246
 
-
-
+" Highlight everything over 80th column
+match ErrorMsg '\%>80v.\+'
