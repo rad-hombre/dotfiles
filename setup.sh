@@ -1,7 +1,6 @@
 
 <<<<<<< HEAD
 #!/bin/usr/env bash
-#
 
 =======
 #!/bin/bash
