@@ -50,7 +50,7 @@ flipToggle _ f    = return ()
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal      = "xterm"
+myTerminal      = "gnome-terminal"
  
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
@@ -121,6 +121,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
 
     ,   ((modm,             xK_f    ), spawn "firefox")
+
+    ,   ((modm,             xK_g    ), spawn "chromium-browser")
  
     -- close focused window
     , ((modm .|. shiftMask, xK_c     ), kill)
