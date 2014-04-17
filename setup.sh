@@ -1,10 +1,6 @@
 
-<<<<<<< HEAD
 #!/bin/usr/env bash
 
-=======
-#!/bin/bash
->>>>>>> parent of ad93173... Made setup.sh more betterer.
 # -------------------
 # 	.make.sh
 #
