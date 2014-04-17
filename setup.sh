@@ -1,7 +1,11 @@
 
+<<<<<<< HEAD
 #!/bin/usr/env bash
 #
 
+=======
+#!/bin/bash
+>>>>>>> parent of ad93173... Made setup.sh more betterer.
 # -------------------
 # 	.make.sh
 #
@@ -27,8 +31,7 @@ dir=~/.dotfiles
 olddir=~/.dotfiles_old
 
 # list of files we're dealing with 
-files="aliases bashrc vimrc vim zshrc oh-my-zsh screenrc ssh tmux.conf
-Xresources inputrc bash_login vimperatorrc xmonad xmobarrc gitconfig"
+files="aliases bashrc vimrc vim zshrc oh-my-zsh screenrc ssh tmux.conf Xresources inputrc bash_login vimperatorrc xmonad xmobarrc"
 
 
 
