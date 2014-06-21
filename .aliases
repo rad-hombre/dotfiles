@@ -29,3 +29,11 @@ alias grep='grep --color=auto'
 
 alias tree="tree -C"
 
+
+#alias gdb="gdb -tui"
+alias xflux="xflux -z 97240"
+
+# To get tmux to use 256 colors 
+alias tmux="TERM=xterm-265color tmux"
+
+alias tmux="tmux -2"

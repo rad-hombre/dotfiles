@@ -17,5 +17,5 @@ PS1='\[\e[1m\]┌─[\u@\h][\W]\n\[\e[1m\]└─[\$]\[\e[0m\] '
 # Colors for grep#
 export GREP_COLOR="1;33"
 
-
+HISTFILESIZE=50000
 

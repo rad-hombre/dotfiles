@@ -12,5 +12,5 @@ set softtabstop=4
 "set background=light
 
 "colorscheme morning
-
+colo darkblue
 
