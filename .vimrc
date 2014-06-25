@@ -46,7 +46,7 @@ match ErrorMsg '\%>80v.\+'
 "          Theme Settings	
 "=====================================
 
-colo desert "Set molokai background
+colo molokai"Set molokai background
 let g:molokai_original=1 
 set background=light
 set t_Co=256        "Force vim to use 256 colors, essential for molokai background
