@@ -37,3 +37,6 @@ alias xflux="xflux -z 97240"
 alias tmux="TERM=xterm-265color tmux"
 
 alias tmux="tmux -2"
+
+
+alias intellij="sudo /home/morndoff/bin/intellij"

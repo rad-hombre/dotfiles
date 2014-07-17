@@ -39,14 +39,14 @@ set ruler
 ":hi ColorColumn guibg=#2d2d2d ctermbg=246
 
 " Highlight everything over 80th column
-match ErrorMsg '\%>80v.\+'
+"match ErrorMsg '\%>80v.\+'
 
 
 "=====================================
 "          Theme Settings	
 "=====================================
 
-colo molokai"Set molokai background
+colo molokai "Set molokai background
 let g:molokai_original=1 
 set background=light
 set t_Co=256        "Force vim to use 256 colors, essential for molokai background

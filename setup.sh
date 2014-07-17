@@ -64,15 +64,20 @@ git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
 
 
 
+# Copy over fish 
+cp -r $dir/fish $dir/../.config/
+
+
+
 # pull down 
-
-
-
 echo ""
 echo ""
 echo "---------------------------"
 echo "Alright man, we good, enjoy!"
 echo "---------------------------"
+
+
+
 
 
 
