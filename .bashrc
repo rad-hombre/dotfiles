@@ -1,5 +1,10 @@
-
+# Run fish shell as default. 
+# Doing this instead of chsh -s `which fish` because 
+# this way it doesn't break everything. 
 fish
+
+# Reset bash on fish exit or text goes invisible
+reset
 
 source ~/.aliases
 
@@ -22,6 +27,5 @@ export GREP_COLOR="1;33"
 HISTFILESIZE=50000
 
 
-PATH=$PATH:~/bin
-
+PATH=./node_modules/.bin/:$PATH:~/bin
 
