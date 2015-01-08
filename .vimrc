@@ -74,6 +74,10 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'mattn/emmet-vim' 
 "Bundle 'vim-scripts/c.vim'
 
+Bundle 'kien/ctrlp.vim.git'
+
+
+
 "=====================================
 "          Syntastic  
 "=====================================

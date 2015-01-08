@@ -8,7 +8,6 @@ set -g -x PAGER less
 
 # Aliases 
 function ef; vim ~/.config/fish/config.fish; end
-function l; ls -EFl; end
 function la; ls -Gla; end
 
 # Traversal 
