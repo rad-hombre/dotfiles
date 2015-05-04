@@ -1,29 +1,27 @@
 #Matthew's dotfiles
-
-
-
-
 All my dotfiles. Boom.
 
 ##Setup
-After pulling down repository into your home directory ($HOME), run the installation script from within
-the repo directory. 
+Clone repo in your homedir. 
+```
+git clone http://github.com/mattattaque/dotfiles ~/.dotfiles
+```
+Run the installation script from within the repo directory. 
 ```
 sh setup.sh
 ```
-This script automatically creates system links from the repo
-directory into $HOME, copying and preserving old dotfiles into $HOME/dotfiles_old
+Script creates symlinks from dotfiles in repo directory into $HOME, 
+preserving old dotfiles into $HOME/dotfiles_old
 
 ##Vim Setup
-My vim setup works with [vundle](https://github.com/gmarik/vundle) for plugin management. 
+My Vim setup uses [vundle](https://github.com/gmarik/vundle) for plugin management. 
+The setup.sh script pulls down Vundle automatically. 
 
-setup.sh pulls down Vundle automatically. 
-
-The first time you run vim, you can tell it to automatically start pulling down relevant packages, indicated
-in the vimrc, with the following. 
+The first time vim is run after running the script, tell vundle to pull down vim plugins, indicated
+in the .vimrc, by running the following from within vim.
 
 ```
 :BundleInstall
 ```
 
-And you're good. 
+Boom. Done.
