@@ -26,22 +26,4 @@ in the vimrc, with the following.
 :BundleInstall
 ```
 
-And you're good! 
-
-
-##Zsh
-###(Optional)
-Everything works out of the box with bash, but if you fancy a go at zsh, then go for it! 
-After installing zsh, clone [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) into your home directory. 
-```
-git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-myzsh
-```
-
-Once this is done, you'll need to copy a theme file from ~/dotfiles/.oh-my-zsh/themes into 
-the recently created file in ~/.oh-my-zsh
-
- 
-
-
-
-##Enjoy!
+And you're good. 
