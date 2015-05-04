@@ -1,6 +1,4 @@
-
 #!/bin/usr/env bash
-
 # -------------------
 # 	.make.sh
 #
@@ -9,71 +7,40 @@
 # Next, creates symlinks in $HOME to the dotfiles you have in ~/dotfiles
 # Run with 'bash make.sh'
 
-
-
-# There's a problem with symlinking to .vim, and .oh-my-zsh, you have to create those manually, 
-# not sure why yet.
-
-# -------------------
-
-# -------------------
-# 	Variables
-# -------------------
-
-
-
 dir=~/.dotfiles
 olddir=~/.dotfiles_old
 
-# list of files we're dealing with 
-files="aliases bashrc vimrc vim zshrc oh-my-zsh screenrc ssh tmux.conf Xresources inputrc bash_login vimperatorrc xmonad xmobarrc"
-
-
-
-
-# create new dir for old dotfiles and dump 'em in. Backing stuff up
+files="aliases bashrc vimrc vim screenrc ssh tmux.conf inputrc bash_login
+gitconfig"
 
 echo "Creating $olddir for backup of any existing dotfiles in \$HOME"
 mkdir -p $olddir
 echo "... mission accomplished!"
-
 echo ""
 
-# change to the dotfiles dir
 cd $dir
-
-
 for file in $files; do
 	echo "Moving current dotfiles from \$HOME to $olddir"
 	mv ~/.$file ~/.dotfiles_old/
-
 	echo ""
-
 	echo "Creating symlink to dotfiles/$file in \$HOME."
 	ln -s $dir/.$file ~/.$file
-
 done 
 
 echo ""
-echo ""
 echo "---------------------------"
-echo "Cloning Vundle, hold on playa....."
+echo "Cloning Vundle, hold on..."
 echo "---------------------------"
 git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
 
-
-
-
 # Copy over fish 
 cp -r $dir/fish $dir/../.config/
-
-
 
 # pull down 
 echo ""
 echo ""
 echo "---------------------------"
-echo "Alright man, we good, enjoy!"
+echo "Aiight, we good. Enjoy!"
 echo "---------------------------"
 
 
