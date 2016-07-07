@@ -1,6 +1,4 @@
-
-" i am Matthew Orndoff and this is my vimrc 
-" there are many like it, but this one is mine
+" this is my vimrc, there are many like it, but this one is mine
 
 set nocompatible    "Use Vim settings, rather than vi settings 
 set number          "Show numbers lines
@@ -19,7 +17,6 @@ set ignorecase      "Ignore case when searching
 set hlsearch        "highlight search results
 set autoindent		
 set fileencoding=utf-8
-
 set history=1000    "Remember more 
 set undolevels=1000 "Give me more Undo
 
@@ -29,9 +26,6 @@ filetype indent on
 " For comments
 au FileType c,cpp setlocal comments-=:// comments+=f://
 
-
-
-" No 
 set lines=50 columns=150
 set textwidth=80
 set ruler 
@@ -41,29 +35,21 @@ set ruler
 " Highlight everything over 80th column
 "match ErrorMsg '\%>80v.\+'
 
-
 "=====================================
 "          Theme Settings	
 "=====================================
-
 colo molokai "Set molokai background
 let g:molokai_original=1 
 set background=light
 set t_Co=256        "Force vim to use 256 colors, essential for molokai background
 
-
 "=====================================
 "          Vundle	
 "=====================================
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
 "Let Vundle manage vundle package
 Bundle 'gmarik/vundle' 
-
-" My Bundles here:
-
 "Improved commenting <leader>+ci, <leader>+cs, and <leader>+cu are your friends
 Bundle 'scrooloose/nerdcommenter'
 "Improved syntax checking for multiple languages
@@ -71,36 +57,23 @@ Bundle 'scrooloose/syntastic'
 "Improves vim's JS indendation
 Bundle 'pangloss/vim-javascript' 
 "Like zen-coding or emmet for vim
-Bundle 'mattn/emmet-vim' 
+"Bundle 'mattn/emmet-vim' 
 "Bundle 'vim-scripts/c.vim'
-
-Bundle 'kien/ctrlp.vim.git'
-
-
+"Bundle 'kien/ctrlp.vim.git'
 
 "=====================================
 "          Syntastic  
 "=====================================
-
 " Install JS linters globally w/ node for a better time
-
-" JSHint and not JSLint because Crockford's creation is maniacal 
+" JSHint and not JSLint because Crockford's creation is a maniacal syntax nazi
 " and warns me about dumb shit 
-
 let g:syntastic_javascript_checkers = ['jshint']
-
-
-
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '!'
 
 "=====================================
 "          Custom Mappings
 "=====================================
-:map ,php :! clear && php %<cr>
-:map ,py :! clear && python %<cr>
-:map ,rb :! clear && ruby %<cr>
-
-":map ,g++ :! clear && g++ *.cpp *.o ./a.out<cr> 
-
 :map ,js :! clear && node %<cr>
 
 " Clear highlights after search with ESC or CTRL+[  
@@ -112,39 +85,30 @@ let g:syntastic_javascript_checkers = ['jshint']
 :nmap <C-h> <C-w>h
 :nmap <C-l> <C-w>l
 
-
 " Easier indenting in visual mode
 vnoremap < <gv
 vnoremap > >gv
 
+set foldmethod=indent   "Better folding
+
 "=====================================
 "          Emmet 	
 "=====================================
-
-let g:user_emmet_settings = {
-  \  'indentation' : '  ',
-  \  'perl' : {
-  \    'aliases' : {
-  \      'req' : 'require '
-  \    },
-  \    'snippets' : {
-  \      'use' : "use strict\nuse warnings\n\n",
-  \      'warn' : "warn \"|\";",
-  \    }
-  \  }
-  \}
+"let g:user_emmet_settings = {
+    "'indentation' : '  ',
+    "'perl' : {
+      "'aliases' : {
+        "'req' : 'require '
+      "},
+      "'snippets' : {
+        "'use' : "use strict\nuse warnings\n\n",
+        "'warn' : "warn \"|\";",
+      "}
+    "}
+  "}
 
 let g:user_emmet_expandabbr_key = ',e'
-
 let g:use_emmet_complete_tag = 1
-
-"=====================================
-"          c.vim	
-"=====================================
-
-
-"Make c.vim use c99 compiler instead of standard gcc
-"Let  g:C_CCompiler = 'c99'
 
 "=====================================
 "  Randoms (might be useful later)	
@@ -159,12 +123,14 @@ let g:use_emmet_complete_tag = 1
 " au WinEnter * :set winfixheight
 " au WinEnter * :wincmd = 
 
+"autocmd BufWinLeave *.* mkview          "Save and restore file folds
+"autocmd BufWinEnter *.* silent loadview
+
 au FileType * setl fo-=cro "disable god-awful auto-commenting, <stays here!>
 
 "=====================================
 "          Gvim  
 "=====================================
-
 if has("gui_running")
     set guifont=Consolas:h11
     set guioptions=-T                       "removes toolbar
@@ -172,9 +138,8 @@ if has("gui_running")
 endif
 
 "=====================================
-" Autocorrect my derps   
+"           Autocorrect 
 "=====================================
-
 iab teh the
 iab Teh The
 iab Taht That
