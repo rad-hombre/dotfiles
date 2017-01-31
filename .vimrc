@@ -1,5 +1,3 @@
-" this is my vimrc, there are many like it, but this one is mine
-
 set nocompatible    "Use Vim settings, rather than vi settings 
 set number          "Show numbers lines
 syntax on           "Enable syntax highlighting
@@ -7,19 +5,18 @@ set incsearch       "Find the next match as we type the search
 set showmatch       "Show matching parenthesis, curly braces, etc
 set noswapfile      "Disables creation of annoying swap files
 set nobackup        "Disables creation of backup files
-set tabstop=4       "Set tabs to 4 spaces
-set shiftwidth=4    "Sets visual mode indenting to 4 spaces
+set tabstop=2       "Set tabs to 4 spaces
+set shiftwidth=2    "Sets visual mode indenting to 4 spaces
 set ai              "Sets autoindent on
 let mapleader = "," 
 set expandtab       "Use spaces, not actual tabs 
-set softtabstop=4   "Backspace set to 4 spaces 
+set softtabstop=2   "Backspace set to 4 spaces 
 set ignorecase      "Ignore case when searching
 set hlsearch        "highlight search results
 set autoindent		
 set fileencoding=utf-8
 set history=1000    "Remember more 
 set undolevels=1000 "Give me more Undo
-
 filetype plugin on  "Need on for Nerdcommentor
 filetype indent on
 
@@ -35,47 +32,29 @@ set ruler
 " Highlight everything over 80th column
 "match ErrorMsg '\%>80v.\+'
 
-"=====================================
-"          Theme Settings	
-"=====================================
+"====== [ Theme Settings ] ====== 
 colo molokai "Set molokai background
 let g:molokai_original=1 
 set background=light
 set t_Co=256        "Force vim to use 256 colors, essential for molokai background
 
-"=====================================
-"          Vundle	
-"=====================================
+"====== [ Vundle ] ====== 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-"Let Vundle manage vundle package
 Bundle 'gmarik/vundle' 
-"Improved commenting <leader>+ci, <leader>+cs, and <leader>+cu are your friends
 Bundle 'scrooloose/nerdcommenter'
-"Improved syntax checking for multiple languages
 Bundle 'scrooloose/syntastic' 
-"Improves vim's JS indendation
 Bundle 'pangloss/vim-javascript' 
-"Like zen-coding or emmet for vim
 "Bundle 'mattn/emmet-vim' 
-"Bundle 'vim-scripts/c.vim'
 "Bundle 'kien/ctrlp.vim.git'
 
-"=====================================
-"          Syntastic  
-"=====================================
+"====== [ Syntastic ] ====== 
 " Install JS linters globally w/ node for a better time
-" JSHint and not JSLint because Crockford's creation is a maniacal syntax nazi
-" and warns me about dumb shit 
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '!'
 
-"=====================================
-"          Custom Mappings
-"=====================================
-:map ,js :! clear && node %<cr>
-
+"====== [ Custom Mappings ] ====== 
 " Clear highlights after search with ESC or CTRL+[  
 :nnoremap <silent> <esc> :noh<cr><esc>
 
@@ -89,13 +68,14 @@ let g:syntastic_warning_symbol = '!'
 vnoremap < <gv
 vnoremap > >gv
 
-set foldmethod=indent   "Better folding
+" Disable god-awful auto-commenting, <stays here!>
+au FileType * setl fo-=cro 
 
-"=====================================
-"          Emmet 	
-"=====================================
+"set foldmethod=indent   "Better folding
+
+"====== [ Emmet ] ====== 
 "let g:user_emmet_settings = {
-    "'indentation' : '  ',
+  "'indentation' : '  ',
     "'perl' : {
       "'aliases' : {
         "'req' : 'require '
@@ -110,36 +90,7 @@ set foldmethod=indent   "Better folding
 let g:user_emmet_expandabbr_key = ',e'
 let g:use_emmet_complete_tag = 1
 
-"=====================================
-"  Randoms (might be useful later)	
-"=====================================
-
-" only show number line for current window
-" set number
-" au WinEnter * :setlocal number
-" au WinLeave * :setlocal nonumber
-
-"Automatically resize vertical splits
-" au WinEnter * :set winfixheight
-" au WinEnter * :wincmd = 
-
-"autocmd BufWinLeave *.* mkview          "Save and restore file folds
-"autocmd BufWinEnter *.* silent loadview
-
-au FileType * setl fo-=cro "disable god-awful auto-commenting, <stays here!>
-
-"=====================================
-"          Gvim  
-"=====================================
-if has("gui_running")
-    set guifont=Consolas:h11
-    set guioptions=-T                       "removes toolbar
-    set guioptions=-r                       "removes right-hand scrollbar
-endif
-
-"=====================================
-"           Autocorrect 
-"=====================================
+"====== [ Autocorrect ] ====== 
 iab teh the
 iab Teh The
 iab Taht That
@@ -149,7 +100,3 @@ iab Aslo Also
 iab Alos Also
 iab seperate separate 
 iab Seperate Separate 
-
-
-
-
