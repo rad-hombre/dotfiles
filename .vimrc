@@ -60,6 +60,12 @@ let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '!'
 
+
+"====== [ Ctrl-P ] ====== 
+" No let Fuzzy-finder into the chaos that is node_modules 
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+
 "====== [ Custom Mappings ] ====== 
 " Clear highlights after search with ESC or CTRL+[  
 :nnoremap <silent> <esc> :noh<cr><esc>
