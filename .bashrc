@@ -1,5 +1,4 @@
-
-source ~/.aliases
+source $HOME/.aliases
 set -o vi
 
 export EDITOR='vim'
@@ -18,7 +17,11 @@ export GREP_OPTIONS='--color=auto'
 export GREP_COLOR="1;33"
 
 PATH=./node_modules/.bin/:$PATH:~/bin
-CDPATH=.:/$HOME/School
+CDPATH=.:/$HOME/School:/$HOME/WebstormProjects
+
+# Moved this from bottom. 
+export NVM_DIR="/Users/dev/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Run fish as default shell
 # Doing this instead of chsh -s `which fish` because 
@@ -34,5 +37,6 @@ fish
 
 # Reset bash on fish exit or text goes invisible
 reset
+
 
 

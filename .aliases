@@ -1,42 +1,15 @@
-
-# temp aliases for some testing
-alias rr='xrdb ~/.Xresources'
-
 alias weechat='weechat-curses'
-
-alias scrot="scrot '-e $f ~/Pictures/Screenshots'"
-
-
-#install alsa-oss, create/set .config/pianobar/config, set default_driver=oss
-#run aoss pianobar
 alias pianobar='aoss pianobar'
-
-#aliases for changing directories
 alias ..="cd .."
 alias ...='cd ../..'
-
-alias xscreensaver="xscreensaver && xscreensaver-command -lock"
-
 alias l='clear && pwd && ls -FGl'
 alias u='cd .. && l'
-
 # Colors for ls
 #alias ls='ls --color=auto'
 
-#eval `dircolors -b`
-
 alias grep='grep --color=auto'
-
 alias tree="tree -C"
-
-
-#alias gdb="gdb -tui"
-alias xflux="xflux -z 97240"
 
 # To get tmux to use 256 colors 
 alias tmux="TERM=xterm-265color tmux"
-
 alias tmux="tmux -2"
-
-
-alias intellij="sudo /home/morndoff/bin/intellij"
