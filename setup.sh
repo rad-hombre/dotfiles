@@ -10,7 +10,7 @@
 dir=~/.dotfiles
 olddir=~/.dotfiles_old
 
-files="aliases bashrc vimrc vim ssh tmux.conf inputrc bash_login
+files="aliases bashrc vimrc vim ssh tmux.conf inputrc bash_profile
 gitconfig"
 
 echo "Creating $olddir for backup of any existing dotfiles in \$HOME"
