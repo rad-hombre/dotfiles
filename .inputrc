@@ -1,1 +1,10 @@
+set editing-mode vi
 set completion-ignore-case On
+
+#Set CTRL-L clear bash screen
+$if mode=vi
+  set keymap vi-command
+  Control-l: clear-screen
+  set keymap vi-insert
+  Control-l: clear-screen 
+$endif
