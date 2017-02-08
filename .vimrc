@@ -38,34 +38,6 @@ let g:molokai_original=1
 set background=light
 set t_Co=256        "Force vim to use 256 colors, essential for molokai background
 
-"====== [ Vundle ] ====== 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle' 
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/syntastic' 
-Bundle 'pangloss/vim-javascript' 
-Bundle 'mattn/emmet-vim' 
-"Fuzzy finder for vim. 
-Bundle 'kien/ctrlp.vim.git'
-"Extended % matching for HTML, LaTeX, etc.  
-Bundle 'tmhedberg/matchit'        
-"Use <Tab> for all your insert completion needs (:help ins-completion).
-Bundle 'ervandew/supertab' 
-
-
-"====== [ Syntastic ] ====== 
-" Install JS linters globally w/ node for a better time
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_error_symbol = '✗'
-let g:syntastic_warning_symbol = '!'
-
-
-"====== [ Ctrl-P ] ====== 
-" No let Fuzzy-finder into the chaos that is node_modules 
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
-
-
 "====== [ Custom Mappings ] ====== 
 " Clear highlights after search with ESC or CTRL+[  
 :nnoremap <silent> <esc> :noh<cr><esc>
@@ -82,23 +54,34 @@ vnoremap > >gv
 
 " Disable god-awful auto-commenting, <stays here!>
 au FileType * setl fo-=cro 
-
 "set foldmethod=indent   "Better folding
 
-"====== [ Emmet ] ====== 
-"let g:user_emmet_settings = {
-  "'indentation' : '  ',
-    "'perl' : {
-      "'aliases' : {
-        "'req' : 'require '
-      "},
-      "'snippets' : {
-        "'use' : "use strict\nuse warnings\n\n",
-        "'warn' : "warn \"|\";",
-      "}
-    "}
-  "}
+"====== [ Vundle ] ====== 
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle' 
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/syntastic' 
+Bundle 'pangloss/vim-javascript' 
+Bundle 'mattn/emmet-vim' 
+"Fuzzy finder for vim. 
+Bundle 'kien/ctrlp.vim.git'
+"Extended % matching for HTML, LaTeX, etc.  
+Bundle 'tmhedberg/matchit'        
+"Use <Tab> for all your insert completion needs (:help ins-completion).
+Bundle 'ervandew/supertab' 
 
+"====== [ Syntastic ] ====== 
+" Install JS linters globally w/ node for a better time
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '!'
+
+"====== [ Ctrl-P ] ====== 
+" No let Fuzzy-finder into the chaos that is node_modules 
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+"====== [ Emmet ] ====== 
 let g:user_emmet_expandabbr_key = ',e'
 let g:use_emmet_complete_tag = 1
 
