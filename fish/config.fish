@@ -6,3 +6,4 @@ function l; pwd; and ls -FGl; end
 function ...; cd ../..; end
 function u; cd ..; and l; end
 function tree; "tree -C"; end
+

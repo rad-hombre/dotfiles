@@ -1,11 +1,8 @@
 #!/bin/usr/env bash
 # -------------------
-# 	.make.sh
-#
-# Shameless copy of @michaeljsmalley's script adapted to my own needs.
-# Basically, script creates dir and dumps all old dotfiles into it.
-# Next, creates symlinks in $HOME to the dotfiles you have in ~/dotfiles
-# Run with 'bash make.sh'
+# Shameless adapted copy of @michaeljsmalley's script. 
+# Creates directory and dumps old dotfiles into it.
+# Next, creates symlinks in $HOME pointing to dotfiles in '~/dotfiles'
 
 dir=~/.dotfiles
 olddir=~/.dotfiles_old
@@ -15,7 +12,7 @@ gitconfig"
 
 echo "Creating $olddir for backup of any existing dotfiles in \$HOME"
 mkdir -p $olddir
-echo "... mission accomplished!"
+echo "… mission accomplished!"
 echo ""
 
 cd $dir
@@ -28,28 +25,11 @@ for file in $files; do
 done 
 
 echo ""
-echo "---------------------------"
-echo "Cloning Vundle, hold on..."
-echo "---------------------------"
+echo "Cloning Vundle,…"
 git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
 
 # Copy over fish 
 cp -r $dir/fish $dir/../.config/
 
-# pull down 
 echo ""
-echo ""
-echo "---------------------------"
-echo "Aiight, we good. Enjoy!"
-echo "---------------------------"
-
-
-
-
-
-
-
-
-
-
-
+echo "That'll do, friendo… Enjoy!"
