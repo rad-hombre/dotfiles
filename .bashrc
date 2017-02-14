@@ -16,12 +16,3 @@ CDPATH=.:/$HOME/School:/$HOME/WebstormProjects
 # Load NVM 
 export NVM_DIR="/Users/dev/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  
-
-# Run fish as default shell if exists. This instead of $chsh -s `which fish` 
-# because some tools break in fish's non-POSIX environment; 
-# good to have option of dropping back down into bash 
-if type "fish" &> /dev/null ; then
-  fish
-  # Reset bash on fish exit or text goes invisible
-  reset
-fi

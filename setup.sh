@@ -3,8 +3,6 @@
 # Shameless adapted copy of @michaeljsmalley's script. 
 # Creates directory and dumps old dotfiles into it.
 # Next, creates symlinks in $HOME pointing to dotfiles in '~/dotfiles'
-
-
 dotfiles=~/.dotfiles
 olddotfiles=~/.dotfiles_old
 
@@ -15,7 +13,6 @@ if [ -d "$olddotfiles" ]; then
     rm -rf $olddotfiles
 fi
 mkdir -p $olddotfiles
-
 cd $dotfiles
 
 echo ""
@@ -32,9 +29,6 @@ if [ ! -d "$dotfiles/.vim/bundle/vundle" ]; then
   echo "Cloning Vundle,…"
   git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
 fi
-
-# Copy over fish 
-cp -r $dotfiles/fish $dotfiles/../.config/
 
 echo ""
 echo "That'll do, friendo… Enjoy!"
