@@ -10,7 +10,6 @@
     status = auto
     branch = auto
     ui = always
-
 [alias] 
     a = add 
     s = status -s 
@@ -19,19 +18,16 @@
     br = branch
     h = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
-
 [color "diff"]
     meta = yellow
     frag = magenta
     old = red bold
     new = green
     plain = white
-
 [color "status"]
     added = green 
     changed = yellow 
     untracked = cyan
-
 [help] 
     autocorrect = 1
 [filter "lfs"]
