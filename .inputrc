@@ -1,5 +1,20 @@
+# Be 8-bit clean 
+set input-meta on 
+set output-meta on 
+
 set editing-mode vi
-set completion-ignore-case On
+set completion-ignore-case on
+set show-all-if-ambiguous on
+set completion-map-case on
+
+# Mappings for Ctrl-left-arrow and Ctrl-right-arrow for word moving
+# Only works on Bash 4.x, and on OSX it's Option not Control 
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+"\e[5C": forward-word
+"\e[5D": backward-word
+"\e\e[C": forward-word
+"\e\e[D": backward-word
 
 #Set CTRL-L clear bash screen
 $if mode=vi
