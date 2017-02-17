@@ -4,8 +4,7 @@ export PAGER='less'
 export HISTFILESIZE=50000
 force_color_prompt='yes'
 
-PS1='\[\e[32m\]\u\e[33m\]@\e[32m\]\h \e[33m\]\w\[\e[35m\] \$\[\e[0m\] '
-
+export PS1="\[\e[32m\]\u\[\e[33m\]@\[\e[32m\]\h \[\e[33m\]\w\[\e[35m\] \$\[\e[0m\] "
 export CLICOLOR=1
 export LSCOLORS=GxxfCxDxBxegedabagaced
 
