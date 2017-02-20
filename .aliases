@@ -5,8 +5,8 @@ alias ...='cd ../..'
 alias l='clear && pwd && ls -FGl'
 alias u='cd .. && l'
 
-# Colors for ls 
-alias ls='ls --color=auto'
+# Colors for ls (BSD version) 
+alias ls='ls -G'
 alias la='ls -la'
 
 alias grep='grep --color=auto'
