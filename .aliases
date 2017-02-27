@@ -15,3 +15,11 @@ alias tree="tree -C"
 # To get tmux to use 256 colors 
 alias tmux="TERM=xterm-265color tmux"
 alias tmux="tmux -2"
+
+
+alias ch="open -a \"Google Chrome\""
+alias cpu="top -o cpu"
+alias mem="top -o rsize" 
+
+#alias ip="curl -4 icanhazip.com"
+
