@@ -5,6 +5,7 @@
     excludesfile = ~/.gitignore_global # Sets global excludes file
 	editor = vim
     pager = less -r 
+	autocrlf = input
 [color]
     diff = auto
     status = auto
