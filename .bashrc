@@ -8,9 +8,9 @@ parse_git_branch() {
 export EDITOR='vim'
 export PAGER='less'
 export HISTFILESIZE=50000
+export HISTTIMEFORMAT='%F %T ' # Nicer history format 
 force_color_prompt='yes'
 export PS1="\[\e[32m\]\u\[\e[33m\]@\[\e[32m\]\h \[\e[33m\]\w\[\e[35m\]\$(parse_git_branch)\[\e[0m\] " 
-
 export CLICOLOR=1
 export LSCOLORS=GxxfCxDxBxegedabagaced
 

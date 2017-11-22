@@ -10,7 +10,9 @@ alias ls='ls -G'
 alias la='ls -la'
 
 alias grep='grep --color=auto'
-alias tree="tree -C"
+
+# How I imagine this command works every time I remember it
+alias tree="echo 'There might be more but heres the skinny, honcho. (4 lvls deep)'; tree -adCL 4"
 
 # To get tmux to use 256 colors 
 alias tmux="TERM=xterm-265color tmux"
