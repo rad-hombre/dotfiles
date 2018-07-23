@@ -1,5 +1,4 @@
 alias weechat='weechat-curses'
-alias pianobar='aoss pianobar'
 alias ..="cd .."
 alias ...='cd ../..'
 alias l='clear && pwd && ls -FGl'
@@ -22,4 +21,8 @@ alias cpu="top -o cpu"
 alias mem="top -o rsize" 
 
 #alias ip="curl -4 icanhazip.com"
+
+
+alias services="systemctl --no-page -t service -a --state running --no-legend"
+
 
