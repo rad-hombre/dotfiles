@@ -3,6 +3,7 @@ alias ..="cd .."
 alias ...='cd ../..'
 alias l='clear && pwd && ls -FGl'
 alias u='cd .. && l'
+alias z='ls -FGl'
 
 # Colors for ls (BSD version) 
 alias ls='ls -G'
@@ -14,7 +15,7 @@ alias grep='grep --color=auto'
 alias tree="echo 'There might be more but heres the skinny, honcho. (4 lvls deep)'; tree -adCL 4"
 
 # To get tmux to use 256 colors 
-alias tmux="TERM=xterm-265color tmux"
+# alias tmux="TERM=xterm-265color tmux"
 
 alias ch="open -a \"Google Chrome\""
 alias cpu="top -o cpu"
@@ -23,6 +24,12 @@ alias mem="top -o rsize"
 #alias ip="curl -4 icanhazip.com"
 
 
-alias services="systemctl --no-page -t service -a --state running --no-legend"
+alias zz="exa -lh"
+
+
+
+
+
+
 
 
