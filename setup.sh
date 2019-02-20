@@ -1,8 +1,9 @@
 #!/bin/usr/env bash
 # -------------------
-# Shameless adapted copy of @michaeljsmalley's script. 
-# Creates directory and dumps old dotfiles into it.
-# Next, creates symlinks in $HOME pointing to dotfiles in '~/dotfiles'
+# Adapted From @michaeljsmalley's script. 
+# Archives old dotfiles, then 
+# Creates symlinks for ~/.dotfiles in $HOME
+
 dotfiles=~/.dotfiles
 olddotfiles=~/.dotfiles_old
 
@@ -30,5 +31,4 @@ if [ ! -d "$dotfiles/.vim/bundle/vundle" ]; then
   git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
 fi
 
-echo ""
-echo "That'll do, friendo… Enjoy!"
+echo "Done."
