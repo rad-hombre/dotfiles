@@ -1,8 +1,9 @@
 #!/bin/usr/env bash
 # -------------------
-# Shameless adapted copy of @michaeljsmalley's script. 
 # Creates directory and dumps old dotfiles into it.
 # Next, creates symlinks in $HOME pointing to dotfiles in '~/dotfiles'
+
+
 dotfiles=~/.dotfiles
 olddotfiles=~/.dotfiles_old
 
