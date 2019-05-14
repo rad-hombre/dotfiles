@@ -1,10 +1,6 @@
 #!/bin/usr/env bash
 # -------------------
-# Adapted From @michaeljsmalley's script. 
-# Archives old dotfiles, then 
-# Creates symlinks for ~/.dotfiles in $HOME
 
-dotfiles=~/.dotfiles
 olddotfiles=~/.dotfiles_old
 
 files="aliases bashrc vimrc vim ssh tmux.conf inputrc bash_profile
