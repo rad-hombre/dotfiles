@@ -1,5 +1,5 @@
 [user]
-	email = mattheworndoff@gmail.com
+	email = morndoff.dev@gmail.com
 	name = Matthew Orndoff
 [core]
     excludesfile = ~/.gitignore_global # Sets global excludes file
@@ -35,3 +35,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[gui]
+	recentrepo = /Users/dev/Gdrive/Documents/Worktable/Playground/git/GitPractice
