@@ -20,5 +20,3 @@ export GREP_COLOR="1;33"
 
 PATH=./node_modules/.bin/:$PATH:~/bin
 CDPATH=.:/$HOME/School:/$HOME/Projects
-
-zsh
