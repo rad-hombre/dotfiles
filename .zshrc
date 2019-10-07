@@ -1,14 +1,4 @@
 source $HOME/.aliases
-
-# Git branch in prompt.
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-#autoload -Uz promptinit
-#promptinit
-#prompt adam1
-
 setopt histignorealldups sharehistory
 
 # Use Vi-mode editing 
@@ -16,12 +6,6 @@ bindkey -v
 
 # ctrl-r starts searching history backward
 bindkey '^r' history-incremental-search-backward
-
-
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-#HISTSIZE=50000
-#SAVEHIST=50000
-#HISTFILE=~/.zsh_history
 
 # Use modern completion system
 autoload -Uz compinit
@@ -45,9 +29,6 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-
 # For autojump script
 [[ -s /Users/dev/.autojump/etc/profile.d/autojump.sh ]] && source /Users/dev/.autojump/etc/profile.d/autojump.sh
 
-#autoload -U colors && colors
-#PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}%% "

@@ -1,22 +1,13 @@
-# Start-up file for zsh shell 
-# Place all environment variables in here not in .zshrc
-# .zshrc is only read by interactive shells 
-
+# Set env variables for zsh in this file. 
+# .zshrc is only read by interactive shells. 
 
 source $HOME/.aliases
 
 # Color prompt 
 autoload -U colors && colors
 
-
-# Git branch in prompt.
-parse_git_branch () {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-# Set propmt 
+# Set prompt 
 PS1="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$reset_color%}% %"
-
 
 # Display git branch on right-hand side of prompt  
 autoload -Uz vcs_info
@@ -31,4 +22,3 @@ zstyle ':vcs_info:*' enable git
 HISTSIZE=50000
 SAVEHIST=50000
 HISTFILE=~/.zsh_history
-
