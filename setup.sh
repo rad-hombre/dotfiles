@@ -4,7 +4,7 @@
 olddotfiles=~/.dotfiles_old
 
 files="aliases bashrc vimrc vim ssh tmux.conf inputrc bash_profile
-gitconfig"
+gitconfig zshrc zshenv"
 
 if [ -d "$olddotfiles" ]; then
     rm -rf $olddotfiles
