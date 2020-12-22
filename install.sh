@@ -1,10 +1,11 @@
-#!/bin/usr/env bash
+#!/bin/bash
 # -------------------
 
+dotfiles=~/.dotfiles
 olddotfiles=~/.dotfiles_old
 
-files="aliases bashrc vimrc vim ssh tmux.conf inputrc bash_profile
-gitconfig zshrc zshenv"
+files="aliases bashrc bash_profile gitconfig inputrc ssh 
+tmux.conf vimrc vim zshrc zshenv"
 
 if [ -d "$olddotfiles" ]; then
     rm -rf $olddotfiles

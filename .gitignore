@@ -1,16 +1,6 @@
-.oh-my-zsh/*
-.xmonad/owl.jpg
-.xmonad/*.hi
-.xmonad/*.o
-.xmonad/*.errors
-.xmonad/xmonad-x86_64-linux
 .git
 .ssh
-
 .vim/bundle
 .vim/.netrwhist
-.ssh/id_rsa
-*/.DS_Store
 .DS_Store
-.gitignore
-
+*/.DS_Store
