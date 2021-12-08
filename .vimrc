@@ -48,6 +48,9 @@ set t_Co=256        "Force vim to use 256 colors, essential for molokai backgrou
 :nmap <C-h> <C-w>h
 :nmap <C-l> <C-w>l
 
+" Remap?
+:nmap <C-e> :Explore<cr>
+
 " Easier indenting in visual mode
 vnoremap < <gv
 vnoremap > >gv
