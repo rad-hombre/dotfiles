@@ -59,21 +59,6 @@ vnoremap > >gv
 au FileType * setl fo-=cro 
 "set foldmethod=indent   "Better folding
 
-"====== [ Vundle ] ====== 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle' 
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/syntastic' 
-Bundle 'pangloss/vim-javascript' 
-Bundle 'mattn/emmet-vim' 
-"Fuzzy finder for vim. 
-Bundle 'kien/ctrlp.vim.git'
-"Extended % matching for HTML, LaTeX, etc.  
-Bundle 'tmhedberg/matchit'        
-"Use <Tab> for all your insert completion needs (:help ins-completion).
-Bundle 'ervandew/supertab' 
-
 "====== [ Syntastic ] ====== 
 " Install JS linters globally w/ node for a better time
 let g:syntastic_javascript_checkers = ['jshint']

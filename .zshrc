@@ -7,10 +7,6 @@ bindkey -v
 # ctrl-r starts searching history backward
 bindkey '^r' history-incremental-search-backward
 
-# Use modern completion system
-autoload -Uz compinit
-compinit
-
 # Load pure prompt 
 # https://github.com/sindresorhus/pure
 autoload -U promptinit; promptinit

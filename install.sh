@@ -22,10 +22,4 @@ for file in $files; do
 	ln -s $dotfiles/.$file ~/.$file
 done 
 
-if [ ! -d "$dotfiles/.vim/bundle/vundle" ]; then
-  echo ""
-  echo "Cloning Vundle,…"
-  git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-fi
-
 echo "Done."
